@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import EventType from "../../types/event";
 
-export default function EventItem({ event }) {
-  const formattedDate = new Date(event.date).toLocaleDateString('en-US', {
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
+export default function EventItem({ event }: { event: EventType }) {
+  const formattedDate = new Date(event.date).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
   });
   return (
     <article className="event-item">

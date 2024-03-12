@@ -4,4 +4,5 @@ export default interface EventType {
   image: string;
   date: string;
   description: string;
+  location: string;
 }
